@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AKT - Página Oficial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #600eef;
+      color: rgb(255, 255, 255);
+      font-family: 'Arial', sans-serif;
+    }
+
+    h2, h3 {
+      font-weight: bold;
+      color: #ff1e1e;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-top: 2rem;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      margin-top: 1.5rem;
+    }
+
+    .navbar {
+      background-color: #8d0bf0;
+      padding: 1rem 0;
+    }
+
+    .navbar-brand img {
+      max-height: 50px;
+      width: auto;
+      filter: brightness(1.2);
+    }
+
+    .navbar-nav .nav-link {
+      color: white !important;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin-right: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #1e90ff !important;
+    }
+
+    .navbar-toggler {
+      border-color: white;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .carousel {
+      margin-top: 20px;
+    }
+
+    .carousel-inner {
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .carousel-item {
+      height: 600px;
+      background-color: #000;
+    }
+
+    .carousel-item iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+      background-color: #1c1c1c;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card-img-top {
+      border-radius: 10px 10px 0 0;
+      height: 250px;
+      object-fit: cover;
+      background-color: white;
+      padding: 10px;
+    }
+
+    .card-body {
+      background-color: #1c1c1c;
+      border-radius: 0 0 10px 10px;
+      padding: 1.5rem;
+    }
+
+    .card-title {
+      color: white;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-text {
+      color: #d3d3d3;
+      line-height: 1.6;
+    }
+
+    .price {
+      color: #1e90ff;
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-top: 1rem;
+      text-align: right;
+    }
+
+    .historia {
+      padding: 4rem 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+      margin: 3rem 0;
+    }
+
+    .historia p {
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    .footer {
+      background-color: #111;
+      color: white;
+      padding: 2rem 0;
+      margin-top: 4rem;
+    }
+
+    .footer img {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer p {
+      margin: 0;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-item {
+        height: 400px;
+      }
+      
+      h2 {
+        font-size: 2rem;
+      }
+      
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      .card-img-top {
+        height: 200px;
+      }
+    }
+
+    .btn-comprar {
+      background-color: #ff1e1e;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-comprar:hover {
+      background-color: #d10000;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navegación -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#inicio">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/AKT_logo.PNG" alt="AKT Logo" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#productos">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nosotros">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactos">Contactos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carrusel -->
+  <section id="inicio">
+    <div id="carruselPrincipal" class="carousel slide container" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <iframe src="https://www.youtube.com/embed/DER8OCLLXTg" title="AKT Video 1" allowfullscreen></iframe>
+        </div>
+        <div class="carousel-item">
+          <iframe src="https://www.youtube.com/embed/4OR_eQAjRzw" title="AKT Video 2" allowfullscreen></iframe>
+        </div>
+        <div class="carousel-item">
+          <iframe src="https://www.youtube.com/embed/ibqHfgSekOg" title="AKT Video 3" allowfullscreen></iframe>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Productos -->
+  <section id="productos" class="container mt-5">
+    <h2 class="text-center mb-4">Productos Destacados</h2>
+    <div class="row">
+      <!-- Producto 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="https://www.aktmotos.com/sites/default/files/styles/webp/public/2022-07/right%20%286%29.png.webp?itok=J399n6PB" class="card-img-top" alt="AKT NKD 125">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">AKT NKD 125</h5>
+            <p class="card-text">Diseño moderno y eficiente para el uso diario en la ciudad.</p>
+            <div class="mt-auto">
+              <p class="price">$300.00</p>
+              <button class="btn btn-comprar w-100">Comprar Ahora</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="https://www.aktmotos.com/sites/default/files/styles/webp/public/2022-07/right%2045%20%289%29_0.png.webp?itok=ssI7Bt48" class="card-img-top" alt="AKT CR4 162 LED">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">AKT CR4 162 LED</h5>
+            <p class="card-text">Potencia y estilo con iluminación LED de última generación.</p>
+            <div class="mt-auto">
+              <p class="price">$250.00</p>
+              <button class="btn btn-comprar w-100">Comprar Ahora</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="https://www.aktmotos.com/sites/default/files/styles/webp/public/2022-07/AKT%2002%20DICIEMBRE2114_0.png.webp?itok=g_h9eXSs" class="card-img-top" alt="AKT CR4 125 Unishock">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">AKT CR4 125 Unishock</h5>
+            <p class="card-text">Suspensión Unishock para máximo control y comodidad.</p>
+            <div class="mt-auto">
+              <p class="price">$650.00</p>
+              <button class="btn btn-comprar w-100">Comprar Ahora</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Historia -->
+ <section id="nosotros" class="container historia">
+  <h2 class="text-center">Nuestra Historia</h2>
+  <p class="text-center mt-4">AKT Motors nació con el propósito de ofrecer motocicletas de alta calidad para el mercado latinoamericano. Con más de 15 años de experiencia, hemos evolucionado para convertirnos en un referente de movilidad, innovación y confianza en toda la región. 
+    Nos enorgullece ser una empresa comprometida con la <b>movilidad sostenible</b> y la satisfacción de nuestros clientes, ofreciendo motocicletas que se adaptan a las necesidades de cada tipo de conductor. Ya sea que busques un vehículo eficiente para el día a día o seas un apasionado de las motos de alto rendimiento, tenemos la moto perfecta para ti.
+    Con un equipo altamente capacitado y una infraestructura de vanguardia, trabajamos constantemente para mejorar la experiencia de nuestros usuarios. Nos destacamos por ofrecer productos que combinan <b>durabilidad</b>, <b>diseño</b> y <b>desempeño</b>, buscando siempre el máximo nivel de satisfacción para nuestros clientes.
+  </p>
+</section>
+
+  <!-- Pie de Página -->
+  <!-- Contactos -->
+<section id="contactos" class="container mt-5">
+  <h2 class="text-center mb-4">Contáctanos</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <p class="text-center">Línea de Atención Nacional: <strong>018000524066</strong></p>
+      <p class="text-center">Línea de Repuestos: <strong>018000524066 opción 2</strong></p>
+      <p class="text-center">Correo Electrónico: <a href="mailto:call.aktmotos@colcomercio.com.co" class="text-info">call.aktmotos@colcomercio.com.co</a></p>
+      <div class="text-center">
+        <h3 class="mt-4">Horarios de Atención</h3>
+        <p>Lunes a Viernes: 7:30 am - 6:00 pm</p>
+        <p>Sábados: 8:00 am - 12:00 m</p>
+      </div>
+    </div>
+  </div>
+</section>
